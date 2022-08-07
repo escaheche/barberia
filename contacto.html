@@ -26,48 +26,48 @@
     <main>
 
         <form action="">
+            <section class="principal">
+                <label for="nombreapellido">Nombre y Apellido</label>
+                <input type="text" id="nombreapellido" class="input-padron" required>
 
-            <label for="nombreapellido">Nombre y Apellido</label>
-            <input type="text" id="nombreapellido" class="input-padron" required>
 
+                <label for="correoelectronico">Correo Electronico</label>
+                <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
 
-            <label for="correoelectronico">Correo Electronico</label>
-            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email@dominio.com">
+                <label for="telefono">Telefono</label>
+                <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
 
-            <label for="telefono">Telefono</label>
-            <input type="tel" id="telefono" class="input-padron" required placeholder="(XX) XXXX XXXX">
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
 
-            <label for="mensaje">Mensaje</label>
-            <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
-
-            <fieldset>
-                <legend>¿Cómo le gustaría que lo contactemos?</legend>
-                <label for="radio-email"><input type="radio" name="contacto" value="email"
+                <fieldset>
+                    <legend>¿Cómo le gustaría que lo contactemos?</legend>
+                    <label for="radio-email"><input type="radio" name="contacto" value="email"
                         id="radio-email">Email</label>
 
 
-                <label for="radio-telefono"> <input type="radio" name="contacto" value="telefono"
+                    <label for="radio-telefono"> <input type="radio" name="contacto" value="telefono"
                         id="radio-telefono">Telefono</label>
 
 
-                <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp"
+                    <label for="radio-whatsapp"><input type="radio" name="contacto" value="whatsapp"
                         id="radio-whatsapp" checked>WhatsApp</label>
 
-            </fieldset>
+                </fieldset>
 
-            <fieldset>
-                <legend>¿En que horario prefiere ser atendido?</legend>
-                <select>
+                <fieldset>
+                    <legend>¿En que horario prefiere ser atendido?</legend>
+                    <select>
                     <option>Mañana</option>
                     <option>Tarde</option>
                     <option>Noche</option>
     
                 </select>
-            </fieldset>
+                </fieldset>
 
-            <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recivir novedades de la Barbería Alura?</label>
-            <input type="submit" value="Enviar Formulario" class="enviar">
-
+                <label class="checkbox"><input type="checkbox" checked>¿Le gustaria recivir novedades de la Barbería Alura?</label>
+                <input type="submit" value="Enviar Formulario" class="enviar">
+            </section>
         </form>
         <table>
             <thead>
